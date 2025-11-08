@@ -8,10 +8,12 @@ All frontend serving has been removed. This API provides endpoints for:
 - Session management and result retrieval
 """
 from fastapi import FastAPI
+
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from datetime import datetime, timezone, timedelta
 import logging
+import os
 
 from prometheus_fastapi_instrumentator import Instrumentator
 
@@ -35,9 +37,14 @@ app = FastAPI(
 
 Instrumentator().instrument(app).expose(app)
 
+
+# Read CORS origins from environment variable (comma-separated)
+cors_env = os.getenv("CORS", "http://localhost:5173")
+allow_origins = [origin.strip() for origin in cors_env.split(",") if origin.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", ""],
+    allow_origins=allow_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
