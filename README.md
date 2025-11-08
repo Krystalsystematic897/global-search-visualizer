@@ -117,6 +117,7 @@ Create a `.env` file in the project root for Google API credentials:
 ```env
 GOOGLE_API_KEY=your-api-key-here
 GOOGLE_CSE_ID=your-search-engine-id-here
+CORS=https://example1.xyz,http://localhost:5173
 ```
 
 Or configure via `config.json`:
