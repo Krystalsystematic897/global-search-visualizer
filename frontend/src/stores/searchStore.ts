@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { api } from "../services/api";
 import type { SearchStore, SearchRequest, SearchJob } from "../types";
+import { getWebSocketUrl } from "../lib/utils";
 
 let wsConnection: WebSocket | null = null;
 
@@ -48,13 +49,7 @@ export const useSearchStore = create<SearchStore>((set, get) => ({
     get().disconnectWebSocket();
 
     try {
-      const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-      const host = window.location.hostname;
-
-      const wsPort = import.meta.env.DEV
-        ? "8000"
-        : window.location.port || "80";
-      const wsUrl = `${protocol}//${host}:${wsPort}/ws/job/${jobId}`;
+      const wsUrl = getWebSocketUrl(`/ws/job/${jobId}`);
 
       console.log("Connecting to WebSocket:", wsUrl);
       wsConnection = new WebSocket(wsUrl);

@@ -44,3 +44,15 @@ export function getApiBaseUrl(): string {
 
   return baseUrl;
 }
+
+export function getWebSocketUrl(path: string): string {
+  const baseUrl = getApiBaseUrl();
+
+  // Convert http(s):// to ws(s)://
+  const wsUrl = baseUrl.replace(/^http/, "ws");
+
+  // Ensure path starts with /
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+
+  return `${wsUrl}${normalizedPath}`;
+}

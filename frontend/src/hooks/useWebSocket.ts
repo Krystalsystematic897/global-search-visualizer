@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from "react";
+import { getWebSocketUrl } from "../lib/utils";
 
 interface WebSocketMessage {
   type: "status" | "progress" | "completed" | "error" | "ping" | "started";
@@ -28,14 +29,7 @@ export const useWebSocket = (jobId: string | null): UseWebSocketReturn => {
     }
 
     try {
-      const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-      const host = window.location.hostname;
-      const port =
-        window.location.port ||
-        (window.location.protocol === "https:" ? "443" : "80");
-
-      const wsPort = import.meta.env.DEV ? "8000" : port;
-      const wsUrl = `${protocol}//${host}:${wsPort}/ws/job/${jobId}`;
+      const wsUrl = getWebSocketUrl(`/ws/job/${jobId}`);
 
       console.log("Connecting to WebSocket:", wsUrl);
       const ws = new WebSocket(wsUrl);
