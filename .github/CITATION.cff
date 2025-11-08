@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you reference Global Search Visualizer in academic or technical work, please cite this project."
+title: "Global Search Visualizer - Multi-Region Search Result Screenshot Tool"
+abstract: "A multi-region search result screenshot tool that captures and analyzes search engine results from different geographic locations using proxies, Playwright browser automation, and a professional React dashboard with real-time WebSocket updates."
+type: "software"
+date-released: 2025-11-09
+authors:
+  - family-names: "0xArchit"
+    given-names: "Archit"
+    email: "mail@0xarchit.is-a.dev"
+  - name: "Global Search Visualizer Contributors"
+repository-code: "https://github.com/0xarchit/global-search-visualizer"
+url: "https://global-view.0xarchit.is-a.dev"
+license: "MIT"
+keywords:
+  - search-engine
+  - geo-search
+  - proxy
+  - playwright
+  - fastapi
+  - react
+  - typescript
+  - dashboard
+  - automation
+  - seo-tools
+  - multi-region
+  - web-scraping
+  - screenshot
+  - browser-automation
+  - geolocation
