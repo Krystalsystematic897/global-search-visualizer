@@ -66,6 +66,30 @@ const ProxyManagement = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+              <div className="flex items-start gap-3">
+                <Server className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                <div className="flex-1">
+                  <h4 className="text-sm font-semibold text-blue-900 mb-1">
+                    Free Proxies for Testing
+                  </h4>
+                  <p className="text-sm text-blue-700">
+                    Get 10 free rotating proxies from{" "}
+                    <a
+                      href="https://www.webshare.io/?referral_code=6iephznbtfmy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium underline hover:text-blue-900"
+                    >
+                      Webshare.io
+                    </a>{" "}
+                    for testing purposes. Perfect for getting started with
+                    multi-region searches!
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <Textarea
               label="Proxy List"
               placeholder="Enter proxies (one per line)&#10;Example:&#10;127.0.0.1:8080&#10;socks5://192.168.1.1:1080&#10;user:pass@proxy.com:3128"
