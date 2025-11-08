@@ -1,0 +1,86 @@
+{
+  "app_name": "Global Search Visualizer",
+  "version": "1.0.0",
+  "description": "Multi-Region Search Result Screenshot Tool",
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "reload": true
+  },
+  "playwright": {
+    "headless": true,
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "timeout": 30000,
+    "wait_for": "networkidle"
+  },
+  "search_engines": {
+    "google": {
+      "url": "https://www.google.com/search?q={query}",
+      "enabled": true
+    },
+    "bing": {
+      "url": "https://www.bing.com/search?q={query}",
+      "enabled": true
+    },
+    "duckduckgo": {
+      "url": "https://duckduckgo.com/?q={query}",
+      "enabled": true
+    },
+    "yahoo": {
+      "url": "https://search.yahoo.com/search?p={query}",
+      "enabled": true
+    }
+  },
+  "google_search_api": {
+    "enabled": true,
+    "api_key": null,
+    "search_engine_id": null,
+    "results": 10,
+    "timeout": 15,
+    "safe": "off",
+    "fallback_to_browser": false,
+    "extra_params": {}
+  },
+  "proxy": {
+    "validation_timeout": 10,
+    "max_concurrent_validations": 10,
+    "retry_attempts": 2
+  },
+  "concurrency": {
+    "max_concurrent_browsers": null,
+    "max_concurrent_jobs": null,
+    "auto_calculate": true
+  },
+  "behavior": {
+    "shuffle_engines": true,
+    "task_delay_min_ms": 200,
+    "task_delay_max_ms": 500
+  },
+  "captcha_detection": {
+    "enabled": true,
+    "keywords": [
+      "unusual traffic",
+      "verify you're human",
+      "captcha",
+      "recaptcha",
+      "security check",
+      "access denied"
+    ]
+  },
+  "storage": {
+    "results_dir": "results",
+    "logs_dir": "results/logs",
+    "screenshots_dir": "results/screenshots"
+  },
+  "features": {
+    "full_page_screenshot": true,
+    "viewport_screenshot": true,
+    "geolocation_lookup": true,
+    "session_history": true,
+    "zip_download": true,
+    "json_export": true
+  }
+}

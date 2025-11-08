@@ -1,0 +1,30 @@
+# Exclude files and folders not needed in the backend image build context
+# VCS
+.git
+.gitignore
+
+# Python caches and venvs
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+
+# Node/Frontend
+frontend/
+node_modules/
+
+# Local artifacts and logs
+results/
+logs/
+*.log
+
+# Editor/OS
+.vscode/
+.DS_Store
+
+# Tests and backups
+backup/
+test_screenshots/
